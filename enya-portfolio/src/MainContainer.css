@@ -66,3 +66,19 @@ ul {
 .divider li {
     font-size: 1.3em;
 }
+
+.nav-button {
+    color: white;
+    padding: 5px 25px 5px 25px;
+    border-radius: 0.5em;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: rgba(196, 180, 255, 60%);
+}
+
+.nav-button:active {
+    background-color: rgba(155, 127, 255, 60%);
+}
