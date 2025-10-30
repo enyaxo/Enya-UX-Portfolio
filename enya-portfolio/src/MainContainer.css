@@ -1,4 +1,4 @@
-.container-box {
+.container-content {
     width: 90vw;
     height: 80vh;
     max-width: 1300px; /* Won't exceed this width */
@@ -9,76 +9,60 @@
     box-shadow: 0 4px 30px rgba(255, 255, 255, 40%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 3px solid rgba(255, 255, 255, 50%);
+    border: 3px solid var(--main-accent);
     background-color: rgba(255, 255, 255, 30%);
 }
 
-.browser-header {
-    border-bottom: 3px solid rgba(255, 255, 255, 50%);
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 40%);
-
-    height: 5vh;
-    padding: 20px 16px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+.box-content {
+    padding-top: 2em;
+    margin: 0 10em 0 10em;
+    text-align: left;
 }
 
-/* Search bar */
-
-.search-bar {
-    position: relative;
+.page-title {
+    padding: 0 0 0 30px;
     width: 30em;
     text-align: left;
-    margin: 0 auto;
-    /* Glass morphism CSS settings */
-    border-radius: 2.5em;
+    display: flex;
+
+    border-radius: 2em;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 40%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 3px solid rgba(255, 255, 255, 50%);
+    border: 3px solid var(--main-accent);
+}
+
+.page-title h1 {
+    color: var(--main-accent);
+    font-size: 2em;
+    font-family: "Nunito Sans", serif;
+}
+
+.box-content h2 {
+    color: var(--main-accent);
+    font-family: "Nunito Sans", serif;
+    font-size: 1.7em;
+}
+
+.divider {
+    border-bottom: 3px solid var(--main-accent);
+    margin: 0 10em 0 10em;
+    color: var(--main-accent);
+    font-family: "Nunito Sans", serif;
+    height: 1em;
+    padding: 20px 16px;
     display: flex;
     align-items: center;
 }
 
-.search-bar p {
-    color: white;
-    cursor: pointer;
-    font-family: "Nunito Sans", sans-serif;
-}
-
-.icon {
-    padding: 10px;
-}
-
-
-/* Dots */
-
-.window-dots {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+    gap: 10px;
 }
 
-.dot-exit, .dot-min, .dot-full {
-    padding: 5px;
-    transition: all ease 0.6s;
+.divider li {
+    font-size: 1.3em;
 }
-
-.dot-exit:hover circle {
-    fill: #F96262;
-    cursor: pointer;
-    transition: all ease 0.6s;
-}
-
-.dot-min:hover circle {
-    fill: #ffc65f;
-    cursor: pointer;
-    transition: all ease 0.6s;
-}
-
-.dot-full:hover circle {
-    fill: #AFEE8B;
-    cursor: pointer;
-    transition: all ease 0.6s;
-}
-
-
