@@ -11,12 +11,16 @@
     -webkit-backdrop-filter: blur(5px);
     border: 3px solid var(--main-accent);
     background-color: rgba(255, 255, 255, 30%);
+    overflow: scroll;
+    padding-bottom: 2em;
 }
+
 
 .box-content {
     padding-top: 2em;
-    margin: 0 10em 0 10em;
+    margin: var(--page-margin-padding);
     text-align: left;
+
 }
 
 .page-title {
@@ -44,15 +48,17 @@
     font-size: 1.7em;
 }
 
+/* Divider and sub-nav */
+
 .divider {
     border-bottom: 3px solid var(--main-accent);
-    margin: 0 10em 0 10em;
     color: var(--main-accent);
     font-family: "Nunito Sans", serif;
     height: 1em;
     padding: 20px 16px;
     display: flex;
     align-items: center;
+    margin: var(--page-margin-padding);
 }
 
 ul {
@@ -81,4 +87,22 @@ ul {
 
 .nav-button:active {
     background-color: rgba(155, 127, 255, 60%);
+}
+
+.page-title h1 span {
+    color: #7770D9;
+    cursor: default;
+}
+
+.page-title h1 span:hover {
+    color: #6159d3;
+    transition: all ease 0.3s;
+}
+
+/* Pages */
+
+.page-content {
+    padding-top: 2em;
+    margin: var(--page-margin-padding);
+    text-align: left;
 }

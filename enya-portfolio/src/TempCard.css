@@ -1,0 +1,36 @@
+.card-container {
+    width:calc(100% - 2em);
+    max-width: 200px;
+    padding:1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Glass morphism CSS settings */
+    border-radius: 2.5em;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 40%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 3px solid var(--main-accent);
+    background-color: rgba(255, 255, 255, 30%);
+}
+
+.card-image-thumbnail {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 0 0.5em 0;
+    position: relative;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.card-container .card-image-thumbnail img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 315 / 250;
+    display: block;
+    object-fit: cover;
+}
+
+.card-heading h3 {
+    color: var(--secondary-text);
+}

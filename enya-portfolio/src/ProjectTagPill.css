@@ -1,0 +1,9 @@
+.project-tag {
+    margin: 0 9px 10px 0;
+    background-color: white;
+    border-radius: 1.8em;
+    padding: 7px 15px;
+    display: inline-flex;
+    font-size: 0.7em;
+    border: 2px dotted rgb(195, 167, 255);
+}

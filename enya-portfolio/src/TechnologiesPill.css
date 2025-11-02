@@ -1,0 +1,12 @@
+.tech-pill {
+    margin: 0 9px 10px 0;
+    cursor: default;
+    background-color: rgba(196, 180, 255, 10%);
+    border-radius: 1.8em;
+    padding: 7px 25px;
+    display: inline-flex;
+    font-size: 0.8em;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 40%);
+    border: 2px solid rgba(196, 180, 255, 70%);
+
+}
