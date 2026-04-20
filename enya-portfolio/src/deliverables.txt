@@ -1,2 +1,0 @@
-Figma prototype: https://www.figma.com/design/6v2R7EbzYwunvuC1sWqKZ7/Portfolio?node-id=0-1&p=f&t=tMY8vVqv2c6TNPSD-0
-Eng-git prototype: https://eng-git.canterbury.ac.nz/ebe90/enya-portfolio/-/tree/main/enya-portfolio?ref_type=heads
