@@ -1,8 +1,11 @@
 import './LandingPage.css'
 import React, {useState, useEffect} from "react";
-
+import MainContainer from "./MainContainer.jsx";
+import Sparkle from "./Sparkle.jsx";
 
 function LandingPage() {
+
+    // Clock face function
 
     const [time, setTime] = useState(new Date())
 
@@ -17,6 +20,8 @@ function LandingPage() {
 
     }, []);
 
+
+
     function formatTime() {
         let hours = time.getHours()
         let mins = time.getMinutes()
@@ -29,10 +34,20 @@ function LandingPage() {
         return (num < 10 ? "0" : "") + num
     }
 
-    return (
-        <div>
-            <span>{formatTime()}</span>
+    const [showMain, setShowMain] = useState(false)
+
+    return showMain ? <MainContainer/> : (
+        <div className={"landing-container"}>
+            {Array.from({ length: 15 }, (_, i) => <Sparkle key={i}/>)}
+            <div className={"lockscreen-container"} style={{zIndex:'100', position:'relative'}}>
+                <span className={"clock-face"}>{formatTime()}</span>
+                <button onClick={() => setShowMain(true)} className={"main-button"}>
+                    Click Me!
+                </button>
+            </div>
+
         </div>
+
     )
 }
 

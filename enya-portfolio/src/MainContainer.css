@@ -1,10 +1,13 @@
+
+
 .container-content {
     width: 90vw;
-    height: 80vh;
+    height: 90vh;
     flex-direction: column;
     overflow: hidden;
     display: flex; /* need flex for .scrollable-content */
     /* Glass morphism CSS settings */
+
     border-radius: 2.5em;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 40%);
     backdrop-filter: blur(5px);
@@ -77,8 +80,8 @@ ul {
 
 .nav-button {
     color: white;
-    padding: 5px 25px 5px 25px;
-    border-radius: 0.5em;
+    padding: 0.3em 1em 0.3em 1em;
+    border-radius: 1em;
     transition: all ease 0.3s;
     cursor: pointer;
 }
