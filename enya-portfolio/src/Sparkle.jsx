@@ -23,7 +23,7 @@ function Sparkle() {
                 setTimeout(() => {
                     setPosition(randomPosition());
                     setAnimating(true);
-                }, 1000);
+                }, 1500);
                 schedule();
             }, randomDelay());
         };
@@ -33,7 +33,7 @@ function Sparkle() {
     }, []);
 
         return (
-            <svg width="30" height="30" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
+            <svg width="20" height="20" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
                 position: 'absolute',
                 top: position.top,
                 left: position.left,

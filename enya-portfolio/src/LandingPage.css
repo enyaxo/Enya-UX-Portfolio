@@ -27,10 +27,10 @@
 }
 
 .clock-face {
-    font-family: "Nunito Sans", serif;
-    font-size: 5em;
+    font-family: var(--main-text), sans-serif;
+    font-size: 1.5em;
     font-weight: bold;
-    color: rgba(50, 10, 26, 70%);
+    color: rgb(109, 94, 140);
     margin-top: 1em;
 }
 
@@ -53,6 +53,7 @@
 
 .main-button:hover {
     transform: scale(1.01);
+    cursor: url("./assets/cursor_click.png") auto;
 
     background: radial-gradient(
             circle at bottom,
@@ -66,4 +67,22 @@
     transform: scale(0.95);
     color: rgba(88, 16, 112, 0.7);
 
+}
+
+
+.title-name {
+    font-family: var(--display-font), serif;
+    font-size: 6em;
+    color: rgb(86, 75, 113);
+    font-weight: 700;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
+
+}
+
+.title-subtext {
+    font-family: var(--main-text), sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    color: rgb(86, 75, 113);
+    font-weight: 600;
 }

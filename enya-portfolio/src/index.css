@@ -15,6 +15,9 @@
   --main-accent: rgb(255, 255, 255);
   --secondary-text: #41394c;
 
+  --display-font: "Poltawski Nowy", serif;
+  --main-text: "Nunito Sans", sans-serif;
+
   --page-margin-padding: 0 14em 0 13em;
 }
 
@@ -27,6 +30,19 @@
                         "wdth" 100,
                         "YTLC" 500;
               }
+
+
+.poltawski-nowy-display-font {
+                   font-family: "Poltawski Nowy", serif;
+                   font-optical-sizing: auto;
+                   font-weight: 500;
+                   font-style: normal;
+                 }
+
+
+* {
+    cursor: inherit;
+}
 
 a {
   font-weight: 500;

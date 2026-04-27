@@ -20,8 +20,6 @@ function LandingPage() {
 
     }, []);
 
-
-
     function formatTime() {
         let hours = time.getHours()
         let mins = time.getMinutes()
@@ -34,6 +32,10 @@ function LandingPage() {
         return (num < 10 ? "0" : "") + num
     }
 
+    // Mouse state change
+
+
+
     const [showMain, setShowMain] = useState(false)
 
     return showMain ? <MainContainer/> : (
@@ -41,8 +43,14 @@ function LandingPage() {
             {Array.from({ length: 15 }, (_, i) => <Sparkle key={i}/>)}
             <div className={"lockscreen-container"} style={{zIndex:'100', position:'relative'}}>
                 <span className={"clock-face"}>{formatTime()}</span>
-                <button onClick={() => setShowMain(true)} className={"main-button"}>
-                    Click Me!
+                <div className={"landing-title"}>
+                    <div className={'title-name'}>enya bekker</div>
+                    <div className={'title-subtext'}>PRODUCT DESIGNER</div>
+                </div>
+                <button onClick={() => setShowMain(true)} className={"main-button"}
+                        onMouseEnter={() => setCursor('hover')}
+                        onMouseLeave={() => setCursor('default')}>
+                    come get to know me!
                 </button>
             </div>
 
