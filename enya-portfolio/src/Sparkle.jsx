@@ -5,12 +5,12 @@ function Sparkle() {
 
     // Background sparkle function
 
-    const [position, setPosition] = useState({top: `${Math.random() * 90}%`, left: `${Math.random() * 90}%`});
+    const [position, setPosition] = useState({top: `${Math.random() * 95}%`, left: `${Math.random() * 95}%`});
 
-    const randomDelay = () => Math.random() * (4000 - 1500) + 1500;
+    const randomDelay = () => Math.random() * (3000 - 1500) + 1500;
     const randomPosition = () => ({
-        top: `${Math.random() * 90}%`,
-        left: `${Math.random() * 90}%`
+        top: `${Math.random() * 95}%`,
+        left: `${Math.random() * 95}%`
     })
     const [animating, setAnimating] = useState(true);
 

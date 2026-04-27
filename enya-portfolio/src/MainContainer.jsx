@@ -2,8 +2,9 @@ import './MainContainer.css'
 import NavBar from "./NavBar.jsx";
 import About from "./pages/About.jsx";
 import Works from "./pages/Works.jsx";
-import {useState} from "react";
+import React, {useState} from "react";
 import Contact from "./pages/Contact.jsx";
+import Sparkle from "./Sparkle.jsx";
 
 
 function MainContainer() {
@@ -25,6 +26,7 @@ function MainContainer() {
 
     return (
         <div className={"container-box"}>
+            {Array.from({ length: 25 }, (_, i) => <Sparkle key={i}/>)}
             <div className={"container-content"}>
                 <div style={{position:"sticky", top:"0", zIndex: 100}}><NavBar/></div>
                 <div className={"scrollable-content"}>
