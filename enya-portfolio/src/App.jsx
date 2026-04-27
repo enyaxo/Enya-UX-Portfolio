@@ -2,8 +2,8 @@ import {useEffect, useState} from 'react'
 import './App.css'
 import LandingPage from './LandingPage.jsx';
 import MainContainer from "./MainContainer.jsx";
-import cursorDefault from './assets/cursor_default.svg'
-import cursorClick from './assets/cursor_click.svg'
+import cursorDefault from './assets/cursor_default.png'
+import cursorClick from './assets/cursor_click.png'
 
 function App() {
 
