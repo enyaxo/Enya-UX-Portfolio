@@ -2,7 +2,13 @@ import './About.css'
 
 function About() {
     return (
-        <div>Placeholder About</div>
+        <div className={"about-container"}>
+            <div>
+                <div>
+
+                </div>
+            </div>
+        </div>
     )
 }
 

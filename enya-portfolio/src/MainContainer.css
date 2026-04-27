@@ -80,10 +80,11 @@ ul {
 
 .nav-button {
     color: white;
-    padding: 0.3em 1em 0.3em 1em;
-    border-radius: 1em;
+    padding: 0.3em 1.2em 0.3em 1.2em;
+    border-radius: 2em;
     transition: all ease 0.3s;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .nav-button:hover {
@@ -97,6 +98,7 @@ ul {
 .page-title h1 span {
     color: #7770D9;
     cursor: default;
+    font-family: var(--display-font), serif;
 }
 
 .page-title h1 span:hover {

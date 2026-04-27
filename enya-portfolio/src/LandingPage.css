@@ -20,25 +20,26 @@
 }
 
 .lockscreen-container {
-    flex-direction: column;
-    display: inline-flex;
-    justify-content: space-between;
     height: 100%;
+    width: 100%;
 }
 
 .clock-face {
     font-family: var(--main-text), sans-serif;
     font-size: 1.5em;
     font-weight: bold;
-    color: rgb(109, 94, 140);
+    color: white;
     margin-top: 1em;
+    background-color: rgb(107, 96, 138, 80%);
+    padding: 0.2em 1.3em;
+    border-radius: 2em;
 }
 
 .main-button {
     cursor: pointer;
-    padding: 1em 1em;
+    padding: 1em 2em;
     font-size: 1em;
-    color: rgba(50, 10, 26, 70%);
+    color: rgb(107, 96, 138);
     font-weight: bold;
     background: rgba(255, 255, 255, 40%);
     background-size: cover;
@@ -85,4 +86,12 @@
     letter-spacing: 0.2em;
     color: rgb(86, 75, 113);
     font-weight: 600;
+}
+
+.lockscreen-inner {
+    flex-direction: column;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 2em;
 }
