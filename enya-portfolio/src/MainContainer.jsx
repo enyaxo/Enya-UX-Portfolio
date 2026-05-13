@@ -32,9 +32,9 @@ function MainContainer() {
                 <div className={"scrollable-content"}>
                     <div className={"box-content"}>
                         <div className={'page-title'}>
-                            <h1>hello, i'm <span>enya</span></h1>
+                            <h1>hello, i'm <span>enya ٠࣪⭑</span></h1>
                         </div>
-                        <h2>third year ux/ui design student, web & app developer</h2>
+                        <h2>final year ux/ui design student, web & app developer</h2>
                     </div>
                     <div className={"divider"}>
                         <ul>
