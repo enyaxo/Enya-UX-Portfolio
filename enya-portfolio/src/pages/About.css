@@ -41,5 +41,5 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 5em;
-    margin-top: 2em;
+    margin: 2em 0 4em 0;
 }

@@ -1,10 +1,11 @@
 import {useState} from "react";
 import './Works.css'
-import TempCard from "../TempCard.jsx";
+import ProjectCard from "../ProjectCard.jsx";
 import ProjectDetails from "../ProjectDetails.jsx";
+import projects from "../projects/index.js";
 
 
-function Works() {
+function Works({}) {
     const [selectedCard, setSelectedCard] = useState(null)
 
     const handleCardClick = (projectData) => {
@@ -21,11 +22,18 @@ function Works() {
         )
     }
 
+    
+    console.log(projects) // add this temporarily
+
     return (
         <div className={'works-container'}>
-            <TempCard onCardClick={handleCardClick}/>
+            {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} onCardClick={handleCardClick}/>
+            ))}
         </div>
     )
 }
 
 export default Works
+
+

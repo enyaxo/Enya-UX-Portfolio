@@ -47,7 +47,7 @@ function LandingPage() {
                         <span className={"clock-face"}>{formatTime()}</span>
                     </div>
                     <div className={"landing-title"}>
-                        <div className={'title-name'}>enya bekker</div>
+                        <div className={'title-name'}>Enya Bekker</div>
                         <div className={'title-subtext'}>PRODUCT DESIGNER</div>
                     </div>
                     <div>

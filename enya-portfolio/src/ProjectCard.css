@@ -1,3 +1,5 @@
+/* Old Temp card component, save for reference, not currently in use */
+
 .card-container {
     width:calc(100% - 2em);
     max-width: 200px;
@@ -33,4 +35,20 @@
 
 .card-heading h3 {
     color: var(--secondary-text);
+}
+
+
+
+
+.card-folder img {
+    width: 10em;
+    height: auto;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 5px rgba(255, 255, 255, 20%));
+
+}
+
+.card-folder img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }

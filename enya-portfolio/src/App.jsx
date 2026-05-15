@@ -33,13 +33,16 @@ function App() {
         }
     }, [])
 
-  return (
-      <body>
-          <div className={"background"}>
-              <LandingPage/>
-          </div>
-      </body>
-  )
+    const [selectedProject, setSelectedProject] = useState(null)
+
+    return (
+    <div className="background">
+        {selectedProject
+        ? <MainContainer project={selectedProject} onBack={() => setSelectedProject(null)} />
+        : <LandingPage onCardClick={setSelectedProject} />
+        }
+    </div>
+    )
 }
 
 export default App
