@@ -3,11 +3,7 @@ import fileTest from './file-test.js'
 
 const projects = [
     ucGames,
-    fileTest,
-    ucGames,
-    fileTest,
-    ucGames,
-    fileTest,
+    fileTest
 ]
 
 export default projects

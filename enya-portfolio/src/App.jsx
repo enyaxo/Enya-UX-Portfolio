@@ -2,12 +2,12 @@ import {useEffect, useState} from 'react'
 import './App.css'
 import LandingPage from './LandingPage.jsx';
 import MainContainer from "./MainContainer.jsx";
-import cursorDefault from './assets/cursor_default.png'
-import cursorClick from './assets/cursor_click.png'
+// import cursorDefault from './assets/cursor_default.png'
+// import cursorClick from './assets/cursor_click.png'
 
 function App() {
 
-    const [cursor, setCursor] = useState(cursorDefault)
+    /* const [cursor, setCursor] = useState(cursorDefault)
 
     useEffect(() => {
         document.documentElement.style.cursor = `url(${cursor}) 0 0, auto`
@@ -31,7 +31,7 @@ function App() {
             window.removeEventListener('mouseup', handleMouseUp)
             window.removeEventListener('mousedown', handleMouseDown)
         }
-    }, [])
+    }, []) */
 
     const [selectedProject, setSelectedProject] = useState(null)
 

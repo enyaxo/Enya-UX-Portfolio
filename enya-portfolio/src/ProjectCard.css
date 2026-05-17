@@ -21,7 +21,6 @@
     height: auto;
     transition: transform 0.3s ease;
     filter: drop-shadow(0 4px 5px rgba(255, 255, 255, 20%));
-
 }
 
 .card-folder img:hover {

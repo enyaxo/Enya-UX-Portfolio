@@ -1,4 +1,4 @@
-import espeonIcon from '../assets/project-thumbnails/espeon.svg';
+import espeonIcon from '../../assets/project-thumbnails/espeon.svg';
 
 const projectTest = {
   "id": "test",
