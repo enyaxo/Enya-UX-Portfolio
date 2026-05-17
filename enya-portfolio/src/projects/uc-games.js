@@ -1,7 +1,10 @@
-{
-  "id": "penis-test",
-  "title": "I Stole Your Penar",
+import ucGamesIcon from '../assets/project-thumbnails/file_test.svg';
+
+const ucGames = {
+  "id": "uc-games",
+  "title": "UC Games Website",
   "year": "2025",
+  "icon": ucGamesIcon,
   "thumbnail": "/thumbnails/UC-Games-Thumbnail.jpg",
   "images": {
     "hero": "/images/UC-Games-Game-Page.jpg",
@@ -24,3 +27,5 @@
   "development": "Our final prototype is built through React...",
   "testing_changes": "Before finalising our developed prototype..."
 }
+
+export default ucGames

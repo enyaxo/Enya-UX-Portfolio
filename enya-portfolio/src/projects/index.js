@@ -1,9 +1,9 @@
-import ucGames from './uc-games.json'
-import penisTest from './penis-test.json'
+import ucGames from './uc-games.js'
+import fileTest from './file-test.js'
 
 const projects = [
     ucGames,
-    penisTest
+    fileTest
 ]
 
 export default projects

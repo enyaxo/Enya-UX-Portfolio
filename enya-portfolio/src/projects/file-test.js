@@ -1,7 +1,10 @@
-{
-  "id": "uc-games",
-  "title": "UC Games Website",
+import espeonIcon from '../assets/project-thumbnails/espeon.svg';
+
+const projectTest = {
+  "id": "test",
+  "title": "Test title",
   "year": "2025",
+  "icon": espeonIcon,
   "thumbnail": "/thumbnails/UC-Games-Thumbnail.jpg",
   "images": {
     "hero": "/images/UC-Games-Game-Page.jpg",
@@ -24,3 +27,5 @@
   "development": "Our final prototype is built through React...",
   "testing_changes": "Before finalising our developed prototype..."
 }
+
+export default projectTest

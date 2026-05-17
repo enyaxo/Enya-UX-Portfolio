@@ -20,7 +20,8 @@ function ProjectCard({project, onCardClick}) {
             </div>
         </div>*/
         <div className={'card-folder'} onClick={() => onCardClick(project)} style={{cursor:'pointer'}}>
-            <img src="../src/assets/folder_test.png" alt={project.title}  ></img>
+            {/* <img src="../src/assets/folder_test.png" alt={project.title}  ></img> */}
+            <img src={project.icon} alt={project.title}></img>
             <h5>{project.title}</h5>
             <p>{project.year}</p>
         </div>
