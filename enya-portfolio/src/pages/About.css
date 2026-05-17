@@ -43,3 +43,10 @@
     gap: 5em;
     margin: 2em 0 4em 0;
 }
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em; 
+}

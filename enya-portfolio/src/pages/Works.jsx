@@ -23,7 +23,7 @@ function Works({}) {
     }
 
     
-    console.log(projects) // add this temporarily
+    console.log(projects)
 
     return (
         <div className={'works-container'}>

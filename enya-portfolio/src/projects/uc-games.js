@@ -1,4 +1,4 @@
-import ucGamesIcon from '../assets/project-thumbnails/file_test.svg';
+import ucGamesIcon from '../assets/project-thumbnails/uc_games_thumbnail.svg';
 
 const ucGames = {
   "id": "uc-games",
