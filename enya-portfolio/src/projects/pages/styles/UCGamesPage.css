@@ -29,3 +29,37 @@
 .back-button svg path {
     fill: var(--secondary-text);
 }
+
+.project-heading h2 {
+    font-size: 3em;
+    margin: 0;
+    font-family: var(--display-font);
+    font-style: italic;
+    color: rgb(86, 75, 113);
+}
+
+.heading-strip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.img-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.img-gallery img {
+    width: 50%;
+    border-radius: 20px;
+
+}
