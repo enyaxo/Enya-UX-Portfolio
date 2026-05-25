@@ -47,15 +47,14 @@ function DriftAppDetails({project, onBack}) {
 
           <div className={'quadrant-card'}>
             <div className={'section-title'}>
-              <h2>Finding a Photo in cluster view (Timeline or Search)</h2>
-            </div>
-            
+              <h2>1. Finding a photo in cluster view (timeline or search)</h2>
+            </div>            
             <img src='../src/assets/project-assets/drift-app/User_Flow_1.png' alt="User Interviews" className={'project-image'} />
           </div>
 
           <div className={'quadrant-card'}>
             <div className={'section-title'}>
-              <h2>Finding a Photo in category clusters</h2>
+              <h2>2. Finding a photo in category clusters</h2>
             </div>
             
             <img src='../src/assets/project-assets/drift-app/User_Flow_2.png' alt="Affinity Mapping" className={'project-image'} />
@@ -63,7 +62,7 @@ function DriftAppDetails({project, onBack}) {
 
           <div className={'quadrant-card'}>
             <div className={'section-title'}>
-              <h2>Arranging a Cluster of Photos</h2>
+              <h2>3. Arranging a cluster of photos</h2>
             </div>
             
             <img src='../src/assets/project-assets/drift-app/User_Flow_3.png' alt="Competitive Analysis" className={'project-image'} />
@@ -71,7 +70,7 @@ function DriftAppDetails({project, onBack}) {
 
           <div className={'quadrant-card'}>
             <div className={'section-title'}>
-              <h2>Viewing a Friends Cluster</h2>
+              <h2>4. Viewing a friends cluster</h2>
             </div>
             
             <img src='../src/assets/project-assets/drift-app/User_Flow_4.png' alt="Persona Development" className={'project-image'} />
@@ -79,7 +78,26 @@ function DriftAppDetails({project, onBack}) {
 
         </div>
 
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Research: Information Architecture</h2>
+        </div>
+        <p>Our first information architecture was created by considering the user flows and the major features we wished to include in the app. It was our intention to make each of the top level categories (in green) an item on the navigation bar, however, we were not happy with there being six items, and thought we might moving settings under profile. Compared to the app later on, there was a greater focus on friends and AI automation rather than augmentation, where it would automatically pull photos from your phone and sort them. </p>
+        <img src='../src/assets/project-assets/drift-app/Information_Architecture_Graph.png' style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt='Information Architecture Graph'></img>
 
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Low-Fidelity Wireframing</h2>
+        </div>
+        <p>These wireframes shows the screens you would see in the first user flow - Finding a photo using the Clusters screen. You can get to the Clusters Screen by tapping the cluster icon (4th icon in the bottom navigation bar).
+            <br></br><br></br>
+            We refined this screen so that each of the cards represents a top-level cluster (like people or pets). It has an image which shows a small preview of a couple of photos that are in that cluster. We included a filter option so that users can sort the top-level clusters and easily find the one they are looking for. The toggle button feature can be used to toggle between the nested clusters view or the photos view.
+            <br></br><br></br>
+            <strong>Nested cluster view:</strong> The idea was that you can tap on a nested cluster to view its photos and possible further nested clusters. We originally had the nested cluster toggle view show all the nested clusters displayed as a big cluster. 
+            <br></br><br></br>
+            <strong>Photos view:</strong> The idea was that this would show the photos of the current cluster you are viewing (e.g. a photo cluster of your pet photos). Then you could tap on a photo to view it individually.
+        </p>
+        <img src='../src/assets/project-assets/drift-app/Low_Fidelity_Wireframes.png' style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt='Low Fidelity Wireframes'></img>
         </div>
     </div>
   );

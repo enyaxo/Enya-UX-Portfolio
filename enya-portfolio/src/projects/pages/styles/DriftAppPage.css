@@ -9,7 +9,7 @@
 .quadrant-card {
   background: rgba(255, 255, 255, 10%);
   border-radius: 1em;
-  padding: 0.3em 2em;
+  padding: 1em 2em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
