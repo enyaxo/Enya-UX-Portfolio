@@ -1,7 +1,9 @@
 import UCGamesDetails from "./UCGamesPage.jsx";
+import DriftAppDetails from "./DriftAppPage.jsx";
 
 const registry = {
-    UCGamesDetails
+    UCGamesDetails,
+    DriftAppDetails
 }
 
 export default registry
