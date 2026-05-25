@@ -1,0 +1,28 @@
+.quadrant-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.quadrant-card {
+  background: rgba(255, 255, 255, 10%);
+  border-radius: 1em;
+  padding: 0.3em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.quadrant-card img {
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .quadrant-grid {
+    grid-template-columns: 1fr;
+  }
+}

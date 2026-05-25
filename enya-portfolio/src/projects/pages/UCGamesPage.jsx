@@ -67,10 +67,12 @@ function UCGamesDetails({project, onBack}) {
         <h2>Testing & Changes</h2>
         </div>
         <p>Before finalising our developed prototype, we sought users to test our website to identify any features we neglected to implement and the usability/functionality of our website as a whole. We conducted an A/B testing flow to test two different means of filtering the search, the first test tested the search filter down to a specific game, the second broadening with the relevant tags (AND vs OR). Testing gave us insight into other features, such as the theme toggle and how it's presented, and the information displayed on the cards.</p>
-        </div>
+        
         <div className='img-gallery'>
           <img src='../src/assets/project-assets/uc-games/search_results_changes.png' alt="Changes made to the search results page"></img>
           <img src='../src/assets/project-assets/uc-games/search_changes.png' alt="Search icon changes"></img>
+        </div>
+        
         </div>
     </div>
   );

@@ -25,9 +25,61 @@ function DriftAppDetails({project, onBack}) {
         <img src={HeroImage} alt={`${project.title} screenshot`} className={'project-image'} />
 
       {/* Unique description for this project */}
-        
-        
-        
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Problem Statement</h2>
+        </div>
+        <p>Our target users are young adults who experience frustration with recalling and finding photos on their phone because it is disorganised. This leads to photos being forgotten, memories being missed and an accumulation of unused photos.</p>
+
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Goal Statement</h2>
+        </div>
+        <p>Our Photo App will let users cluster and organise their photos in a meaningful way. This will affect how users connect and look back at their memories by making a more personalised and efficient photo gallery. We will measure the effectiveness of the app by testing how users feel when using the app, such as their frustrations, and how quickly they can find a photo.</p>
+
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Research: Initial User Flows</h2>
+        </div>
+        <p>Our initial user flows serve as the foundation for how we intend to create our key features and functionality in Drift, our photo clustering app. They also helped to build the flow between the main screens in our app (like home screen, cluster view, settings etc).</p>
+
+        <div className={'quadrant-grid'}>
+
+          <div className={'quadrant-card'}>
+            <div className={'section-title'}>
+              <h2>Finding a Photo in cluster view (Timeline or Search)</h2>
+            </div>
+            
+            <img src='../src/assets/project-assets/drift-app/User_Flow_1.png' alt="User Interviews" className={'project-image'} />
+          </div>
+
+          <div className={'quadrant-card'}>
+            <div className={'section-title'}>
+              <h2>Finding a Photo in category clusters</h2>
+            </div>
+            
+            <img src='../src/assets/project-assets/drift-app/User_Flow_2.png' alt="Affinity Mapping" className={'project-image'} />
+          </div>
+
+          <div className={'quadrant-card'}>
+            <div className={'section-title'}>
+              <h2>Arranging a Cluster of Photos</h2>
+            </div>
+            
+            <img src='../src/assets/project-assets/drift-app/User_Flow_3.png' alt="Competitive Analysis" className={'project-image'} />
+          </div>
+
+          <div className={'quadrant-card'}>
+            <div className={'section-title'}>
+              <h2>Viewing a Friends Cluster</h2>
+            </div>
+            
+            <img src='../src/assets/project-assets/drift-app/User_Flow_4.png' alt="Persona Development" className={'project-image'} />
+          </div>
+
+        </div>
+
+
         </div>
     </div>
   );
