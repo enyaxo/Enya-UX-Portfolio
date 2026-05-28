@@ -24,9 +24,36 @@ function InventoryAppDetails({project, onBack}) {
       <div className={'project-description'}>
         <img src={HeroImage} alt={`${project.title} screenshot`} className={'project-image'} />
 
-      {/* Unique description for this project */}
+        {/* Unique description for this project */}
 
-      
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Problem Overview</h2>
+        </div>
+        <p>Staff at the Univeristy of Canterbury have no ideal way of managing large numbers of items which may be loaned out to students (and other staff). There is no consistent format of software used to facilitate this process. A new in-house system purpose built for the needs of these staff members should help address the problems they face with current systems, allowing for greater control and customisation of an inventory managament system. </p>
+
+        <div className={'section-title'}>
+            <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+            <h2>Stakeholder Needs</h2>
+        </div>
+        <div className={'quadrant-grid'}>
+        <div className={'quadrant-card'}>
+          <div className={'section-title'}>
+            <h2>Stakeholder 1 - Board Game Loans</h2>
+            </div>
+            <p>Our first stakeholder currently tracks board game and equipment loans via Excel, which is functional but slow and fully manual. They need a faster system with automated inventory updates, clear availability status, and minimal data entry. The main gaps in their current setup are the lack of a student-facing interface, no due date tracking, and no automated reminders, making overdue or missing items hard to manage.</p>
+        </div>
+
+        <div className={'quadrant-card'}>
+          <div className={'section-title'}>
+            <h2>Stakeholder 2 - SOPD Equipment</h2>
+            </div>
+            <p>Our second stakeholder manages a commercial cloud-based inventory system for the UC Product Design department, but finds it overly complex for their needs; with unused features creating unnecessary clutter and cost. They want a streamlined, purpose-built replacement with a simple setup, no excess business functionality, and lower licensing and hosting costs.</p>
+        </div>
+
+      </div>
+
+
         </div>
     </div>
   );

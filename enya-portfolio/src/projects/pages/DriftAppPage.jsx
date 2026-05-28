@@ -55,7 +55,7 @@ function DriftAppDetails({project, onBack}) {
 
           <div className={'quadrant-card'}>
             <div className={'section-title'}>
-              <h2>1. Finding a photo in cluster view (timeline or search)</h2>
+              <h2>1. Finding a photo in cluster view</h2>
             </div>            
             <img src='../src/assets/project-assets/drift-app/User_Flow_1.png' alt="User Interviews" className={'project-image'} />
           </div>
