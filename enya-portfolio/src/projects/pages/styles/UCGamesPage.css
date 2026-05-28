@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.project-details-container {
+    padding-bottom: 1em;
+}
+
 .back-button {
     border-radius: 8px;
     border: 1px solid transparent;

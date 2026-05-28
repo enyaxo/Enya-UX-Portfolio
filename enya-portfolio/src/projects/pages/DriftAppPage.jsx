@@ -44,7 +44,7 @@ function DriftAppDetails({project, onBack}) {
         </div>
 
       </div>
-      
+
         <div className={'section-title'}>
         <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Research: Initial User Flows</h2>
@@ -111,9 +111,46 @@ function DriftAppDetails({project, onBack}) {
             <strong>Photos view:</strong> The idea was that this would show the photos of the current cluster you are viewing (e.g. a photo cluster of your pet photos). Then you could tap on a photo to view it individually.
         </p>
         </div>
-
         <div className={'centered-image-container'}>
           <img src='../src/assets/project-assets/drift-app/Low_Fidelity_Wireframes.png' alt='Low Fidelity Wireframes'></img>
+        </div>
+
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Expert Design Test</h2>
+        </div>
+        <p>The Expert Review yielded valuable feedback on design weaknesses, strengths, and potential improvements, which we reviewed and incorporated ahead of final usability testing. Some feedback flagged unimplemented Figma features, intentionally left out as outside our scope, but this highlighted a bias in how we defined task-completion actions. We addressed this by allowing for user errors in our usability testing.
+          <br></br><br></br>
+          <strong>The concept:</strong> Users initially struggled with the nested cluster concept, likely due to unfamiliar terminology, poor naming conventions, or limited visual fidelity. The cluster layout also made it unclear where to click to view photos. The toggle button caused further confusion, with users hesitating before use. However, most quickly adapted once they switched to photo view and progressed through the tasks.
+          <br></br><br></br>
+          <strong>Uploading photos:</strong> Users misread the "plus" icon on the navigation bar as adding a photo to an existing cluster, rather than uploading to the app. We addressed this by replacing it with a more conventional "upload" icon.
+          <br></br><br></br>
+          <strong>Dropdown Functionality:</strong> A user attempted to interact with the dropdown on the AI suggested clusters screen while completing Task 2, prompting us to add functionality. The dropdown now shows top-level clusters available to save into.
+        </p>
+
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Usability Design Test</h2>
+        </div>
+        <p>We tested our high-fidelity prototype with four participants unaffiliated with the course, ensuring unbiased, first-impression reactions. As non-experts, their feedback tended to be straightforward, noting what felt intuitive or confusing, but remained valuable and informed several meaningful design changes.
+        <br></br><br></br>
+        <strong>Uploading multiple photos:</strong> One participant didn't realise uploading could generate multiple clusters, defaulting to creating them one at a time. Another wanted more manual control, questioning what to do if the AI grouping didn't match their intent, and asked for the ability to add photos to existing clusters. In response, we expanded the Upload Photos popup to offer three options: adding to an existing cluster, creating a single cluster, or using AI to generate multiple clusters.
+        <br></br><br></br> 
+        <strong>Changes to toggle view:</strong> Originally, viewing a cluster defaulted to the "nested clusters" toggle, with "photos cluster" as the secondary view. Usability participants preferred the opposite, with one noting: "Having the 'photos' appear first makes more sense so that you can view the photos before using the toggle to see the nested clusters." We made this change and found it improved the overall navigation flow.
+        </p>
+
+        <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>High-Fidelity Wireframe</h2>
+        </div>
+        <p>The high-fidelity prototype covers all core features: search, uploading photos to multiple clusters with auto-sorting, viewing photos within clusters, and accessing recently added clusters. The changes shown were all driven by feedback from our testing process.
+          <br></br><br></br>
+          <strong>Toggle Button Location:</strong> Moved the toggle button to have a bit more space between the bottom navigation bar so that users do not accidentally tap the bottom navigation bar rather than the toggle and vice versa.
+          <br></br><br></br>
+          <strong>Album to Clusters Wording:</strong> Changed the wording from “Album Clusters” to “Your clusters” and “album” to “clusters” in the bottom navigation bar. This was mainly because we found that people were getting confused about the purpose of this screen, which is to display all the top-level category photo clusters.
+        </p>
+        <div className={'centered-image-container'}>
+          <img src='../src/assets/project-assets/drift-app/High_Fidelity_Wireframes.png' alt='High Fidelity Wireframes'></img>
         </div>
         
     </div>
