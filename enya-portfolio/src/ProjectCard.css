@@ -13,6 +13,8 @@
   align-items: flex-start;
   padding-right: 1em;
   padding-bottom: 3em;
+  flex-wrap: wrap;
+  max-width: 150px;
 }
 
 
