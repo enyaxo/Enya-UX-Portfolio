@@ -99,3 +99,10 @@
     padding-top: 2em;
     width: 100%;
 }
+
+.landing-title {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
