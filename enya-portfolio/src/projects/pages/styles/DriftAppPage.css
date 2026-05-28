@@ -3,11 +3,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
 .quadrant-card {
-  background: rgba(255, 255, 255, 10%);
+  background: rgba(255, 255, 255, 20%);
   border-radius: 1em;
   padding: 1em 2em;
   display: flex;
@@ -25,4 +26,17 @@
   .quadrant-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.centered-image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.centered-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
 }

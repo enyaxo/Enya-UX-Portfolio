@@ -25,18 +25,26 @@ function DriftAppDetails({project, onBack}) {
         <img src={HeroImage} alt={`${project.title} screenshot`} className={'project-image'} />
 
       {/* Unique description for this project */}
-        <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
-        <h2>Problem Statement</h2>
-        </div>
-        <p>Our target users are young adults who experience frustration with recalling and finding photos on their phone because it is disorganised. This leads to photos being forgotten, memories being missed and an accumulation of unused photos.</p>
 
-        <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
-        <h2>Goal Statement</h2>
+      <div className={'quadrant-grid'}>
+        <div className={'quadrant-card'}>
+          <div className={'section-title'}>
+            <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+            <h2>Problem Statement</h2>
+            </div>
+            <p>Our target users are young adults who experience frustration with recalling and finding photos on their phone because it is disorganised. This leads to photos being forgotten, memories being missed and an accumulation of unused photos.</p>
         </div>
-        <p>Our Photo App will let users cluster and organise their photos in a meaningful way. This will affect how users connect and look back at their memories by making a more personalised and efficient photo gallery. We will measure the effectiveness of the app by testing how users feel when using the app, such as their frustrations, and how quickly they can find a photo.</p>
 
+        <div className={'quadrant-card'}>
+          <div className={'section-title'}>
+        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+            <h2>Goal Statement</h2>
+            </div>
+            <p>Our Photo App will let users cluster and organise their photos in a meaningful way. This will affect how users connect and look back at their memories by making a more personalised and efficient photo gallery. We will measure the effectiveness of the app by testing how users feel when using the app, such as their frustrations, and how quickly they can find a photo.</p>
+        </div>
+
+      </div>
+      
         <div className={'section-title'}>
         <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Research: Initial User Flows</h2>
@@ -78,12 +86,17 @@ function DriftAppDetails({project, onBack}) {
 
         </div>
 
+        
+
         <div className={'section-title'}>
         <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Research: Information Architecture</h2>
         </div>
         <p>Our first information architecture was created by considering the user flows and the major features we wished to include in the app. It was our intention to make each of the top level categories (in green) an item on the navigation bar, however, we were not happy with there being six items, and thought we might moving settings under profile. Compared to the app later on, there was a greater focus on friends and AI automation rather than augmentation, where it would automatically pull photos from your phone and sort them. </p>
-        <img src='../src/assets/project-assets/drift-app/Information_Architecture_Graph.png' style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt='Information Architecture Graph'></img>
+        <div className={'centered-image-container'}>
+          <img src='../src/assets/project-assets/drift-app/Information_Architecture_Graph.png' alt='Information Architecture Graph'></img>
+        </div>
+        
 
         <div className={'section-title'}>
         <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
@@ -97,8 +110,12 @@ function DriftAppDetails({project, onBack}) {
             <br></br><br></br>
             <strong>Photos view:</strong> The idea was that this would show the photos of the current cluster you are viewing (e.g. a photo cluster of your pet photos). Then you could tap on a photo to view it individually.
         </p>
-        <img src='../src/assets/project-assets/drift-app/Low_Fidelity_Wireframes.png' style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt='Low Fidelity Wireframes'></img>
         </div>
+
+        <div className={'centered-image-container'}>
+          <img src='../src/assets/project-assets/drift-app/Low_Fidelity_Wireframes.png' alt='Low Fidelity Wireframes'></img>
+        </div>
+        
     </div>
   );
 }

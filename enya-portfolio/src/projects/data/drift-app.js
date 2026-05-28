@@ -6,7 +6,7 @@ const driftApp = {
   "year": "2025",
   "icon": driftAppIcon,
   "component": "DriftAppDetails",
-  "technologies": ["Figma", "Paper Prototyping"],
+  "technologies": ["Figma", "Paper Prototyping", "UX/UI", "User Testing", "Presentation"],
   "roles": [
     "UI Research",
     "Wireframing",

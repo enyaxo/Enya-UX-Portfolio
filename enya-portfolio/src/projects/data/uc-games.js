@@ -6,7 +6,7 @@ const ucGames = {
   "year": "2025",
   "icon": ucGamesIcon,
   "component": "UCGamesDetails",
-  "technologies": ["React", "JavaScript", "CSS", "Figma"],
+  "technologies": ["React", "JavaScript", "CSS", "Figma", "User Testing", "Presentation"],
   "roles": [
     "UI Research",
     "Wire-framing",
