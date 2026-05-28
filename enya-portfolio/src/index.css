@@ -44,6 +44,14 @@
     cursor: inherit;
 }
 
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -55,8 +63,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: block;
   min-width: 320px;
   min-height: 100vh;
 }
