@@ -66,3 +66,7 @@
     transition: all ease 0.6s;
 }
 
+.search-bar a {
+    color: var(--main-text);
+    cursor: pointer;
+}

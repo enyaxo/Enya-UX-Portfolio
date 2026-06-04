@@ -19,7 +19,7 @@ function NavBar() {
                     <path d="M24.625 24.625L19.1699 19.1699" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12.0556 22.1111C17.6091 22.1111 22.1111 17.6091 22.1111 12.0556C22.1111 6.50203 17.6091 2 12.0556 2C6.50203 2 2 6.50203 2 12.0556C2 17.6091 6.50203 22.1111 12.0556 22.1111Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <p>enya-bekker.com</p>
+                <p><a href='https://enyascorner.com/'>enyascorner.com</a></p>
             </div>
             <div style={{padding: '0 10px 0 10px'}}>
                 <svg width="26" height="26" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
