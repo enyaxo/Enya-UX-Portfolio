@@ -1,11 +1,14 @@
 import './About.css'
+import Sparkle from '../../assets/sparkle.svg';
+import PhotoOfMe from '../../assets/photo_of_me.jpg';
+
 
 function About() {
     return (
         <div className={"about-container"}>
             <div className={"about-content"}>
                 <div>
-                    <img src='../src/assets/photo_of_me.jpg' alt="Photo of me" className='hero-image'></img>
+                    <img src={PhotoOfMe} alt="Photo of me" className='hero-image'></img>
                 </div>
                 <div>
                     <h1>About Me !</h1>
@@ -33,7 +36,7 @@ function About() {
             <div className='about-details'>
                 <div>
                     <div className='section-title'>
-                        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+                        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
                         <h2>Skills</h2>
                     </div>
                     <ul>
@@ -46,7 +49,7 @@ function About() {
                 </div>
                 <div>
                     <div className='section-title'>
-                        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto'}}></img>
+                        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto'}}></img>
                         <h2>Interests</h2>
                     </div>
                     <ul>
