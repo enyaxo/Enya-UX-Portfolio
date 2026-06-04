@@ -1,8 +1,16 @@
 import TechnologiesPill from '../../TechnologiesPill';
 import './styles/DriftAppPage.css';
+
+//Image imports
 import HeroImage from '../../assets/project-assets/drift-app/hero_image.svg';
 import Sparkle from '../../assets/sparkle.svg';
-
+import UserFlow1 from '../../assets/project-assets/drift-app/User_Flow_1.png';
+import UserFlow2 from '../../assets/project-assets/drift-app/User_Flow_2.png';
+import UserFlow3 from '../../assets/project-assets/drift-app/User_Flow_3.png';
+import UserFlow4 from '../../assets/project-assets/drift-app/User_Flow_4.png';
+import InfoArchitectureGraph from '../../assets/project-assets/drift-app/Information_Architecture_Graph.png';
+import LowFiWireframes from '../../assets/project-assets/drift-app/Low_Fidelity_Wireframes.png';
+import HighFiWireframes from '../../assets/project-assets/drift-app/High_Fidelity_Wireframes.png';
 
 function DriftAppDetails({project, onBack}) {
     return (
@@ -59,7 +67,7 @@ function DriftAppDetails({project, onBack}) {
             <div className={'section-title'}>
               <h2>1. Finding a photo in cluster view</h2>
             </div>            
-            <img src='../src/assets/project-assets/drift-app/User_Flow_1.png' alt="User Interviews" className={'project-image'} />
+            <img src={UserFlow1} alt="User Interviews" className={'project-image'} />
           </div>
 
           <div className={'quadrant-card'}>
@@ -67,7 +75,7 @@ function DriftAppDetails({project, onBack}) {
               <h2>2. Finding a photo in category clusters</h2>
             </div>
             
-            <img src='../src/assets/project-assets/drift-app/User_Flow_2.png' alt="Affinity Mapping" className={'project-image'} />
+            <img src={UserFlow2} alt="Affinity Mapping" className={'project-image'} />
           </div>
 
           <div className={'quadrant-card'}>
@@ -75,7 +83,7 @@ function DriftAppDetails({project, onBack}) {
               <h2>3. Arranging a cluster of photos</h2>
             </div>
             
-            <img src='../src/assets/project-assets/drift-app/User_Flow_3.png' alt="Competitive Analysis" className={'project-image'} />
+            <img src={UserFlow3} alt="Competitive Analysis" className={'project-image'} />
           </div>
 
           <div className={'quadrant-card'}>
@@ -83,7 +91,7 @@ function DriftAppDetails({project, onBack}) {
               <h2>4. Viewing a friends cluster</h2>
             </div>
             
-            <img src='../src/assets/project-assets/drift-app/User_Flow_4.png' alt="Persona Development" className={'project-image'} />
+            <img src={UserFlow4} alt="Persona Development" className={'project-image'} />
           </div>
 
         </div>
@@ -96,7 +104,7 @@ function DriftAppDetails({project, onBack}) {
         </div>
         <p>Our first information architecture was created by considering the user flows and the major features we wished to include in the app. It was our intention to make each of the top level categories (in green) an item on the navigation bar, however, we were not happy with there being six items, and thought we might moving settings under profile. Compared to the app later on, there was a greater focus on friends and AI automation rather than augmentation, where it would automatically pull photos from your phone and sort them. </p>
         <div className={'centered-image-container'}>
-          <img src='../src/assets/project-assets/drift-app/Information_Architecture_Graph.png' alt='Information Architecture Graph'></img>
+          <img src={InfoArchitectureGraph} alt='Information Architecture Graph'></img>
         </div>
         
 
@@ -114,7 +122,7 @@ function DriftAppDetails({project, onBack}) {
         </p>
         </div>
         <div className={'centered-image-container'}>
-          <img src='../src/assets/project-assets/drift-app/Low_Fidelity_Wireframes.png' alt='Low Fidelity Wireframes'></img>
+          <img src={LowFiWireframes} alt='Low Fidelity Wireframes'></img>
         </div>
 
         <div className={'section-title'}>
@@ -152,7 +160,7 @@ function DriftAppDetails({project, onBack}) {
           <strong>Album to Clusters Wording:</strong> Changed the wording from “Album Clusters” to “Your clusters” and “album” to “clusters” in the bottom navigation bar. This was mainly because we found that people were getting confused about the purpose of this screen, which is to display all the top-level category photo clusters.
         </p>
         <div className={'centered-image-container'}>
-          <img src='../src/assets/project-assets/drift-app/High_Fidelity_Wireframes.png' alt='High Fidelity Wireframes'></img>
+        <img src={HighFiWireframes} alt='High Fidelity Wireframes'></img>
         </div>
         
     </div>
