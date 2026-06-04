@@ -1,6 +1,8 @@
 import TechnologiesPill from '../../TechnologiesPill';
 import './styles/UCGamesPage.css';
 import HeroImage from '../../assets/project-assets/java-game/hero_image.svg';
+import Sparkle from '../../assets/sparkle.svg';
+
 
 function JavaGameDetails({project, onBack}) {
     return (

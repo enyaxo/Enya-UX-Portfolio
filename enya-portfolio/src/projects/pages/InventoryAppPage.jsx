@@ -1,6 +1,8 @@
 import TechnologiesPill from '../../TechnologiesPill';
 import './styles/UCGamesPage.css';
 import HeroImage from '../../assets/project-assets/inventory-app/hero_image.svg';
+import Sparkle from '../../assets/sparkle.svg';
+
 
 function InventoryAppDetails({project, onBack}) {
     return (
@@ -27,13 +29,13 @@ function InventoryAppDetails({project, onBack}) {
         {/* Unique description for this project */}
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Problem Overview</h2>
         </div>
         <p>Staff at the Univeristy of Canterbury have no ideal way of managing large numbers of items which may be loaned out to students (and other staff). There is no consistent format of software used to facilitate this process. A new in-house system purpose built for the needs of these staff members should help address the problems they face with current systems, allowing for greater control and customisation of an inventory managament system. </p>
 
         <div className={'section-title'}>
-            <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+            <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
             <h2>Stakeholder Needs</h2>
         </div>
         <div className={'quadrant-grid'}>
@@ -49,10 +51,33 @@ function InventoryAppDetails({project, onBack}) {
             <h2>Stakeholder 2 - SOPD Equipment</h2>
             </div>
             <p>Our second stakeholder manages a commercial cloud-based inventory system for the UC Product Design department, but finds it overly complex for their needs; with unused features creating unnecessary clutter and cost. They want a streamlined, purpose-built replacement with a simple setup, no excess business functionality, and lower licensing and hosting costs.</p>
+          </div>
         </div>
 
-      </div>
+        <div className={'section-title'}>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Research</h2>
+        </div>
+        <div className='img-gallery'>
+          <img src='../src/assets/project-assets/inventory-app/ui_research_1.png' alt="AnyList product inventory structure analysis"></img>
+          <img src='../src/assets/project-assets/inventory-app/ui_research_2.png' alt="UI Research Image of Steam"></img>
+        </div>
+        <p>A re-occurring feature across inventory management apps is a page for analytics and statistics to be used for inventory managers or administrators. These provide insights such as popular items and low stock items. These page could be used to alert staff to actions that may need to be taken.
+          Another key feature of inventory management systems and a need from our stakeholders is the ability to house different types of items, and store information about them, which differs item by item. We would need to consider how to store the varying information in the data source and how to display/interact with it in the front-end.</p>
 
+        <div className={'section-title'}>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Reviewing the Scope</h2>
+        </div>
+        <p>As our project progressed through research, meetings with stakeholders, and decisions beginning to be made, we decided the best approach was to review where we are with the project and where we were heading. To do this we wrote every feature we may add to the web app – in or out of scope/ time constraints – onto sticky notes. Using this information, we gathered and categorised each feature to be scoped in a graph ranking importance from most important to least. Including features which may seem “out of scope” allowed us to judge whether they were or were not out of our capabilities. This activity allowed us to visualise this project rather than approach it with our own cognitive perspective, relative to each person and their capabilities/ strengths and web development history.</p>
+        <div style={{display: 'flex', flexDirection: 'row', marginBottom: '2em'}}>
+          <img src='../src/assets/project-assets/inventory-app/sticky_note_prototyping.png' style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt=''></img>
+        </div>
+
+        <div className={'section-title'}>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <h2>Low-fidelity Prototyping</h2>
+        </div>
 
         </div>
     </div>

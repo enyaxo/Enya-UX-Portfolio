@@ -1,6 +1,8 @@
 import TechnologiesPill from '../../TechnologiesPill';
 import './styles/DriftAppPage.css';
 import HeroImage from '../../assets/project-assets/drift-app/hero_image.svg';
+import Sparkle from '../../assets/sparkle.svg';
+
 
 function DriftAppDetails({project, onBack}) {
     return (
@@ -29,7 +31,7 @@ function DriftAppDetails({project, onBack}) {
       <div className={'quadrant-grid'}>
         <div className={'quadrant-card'}>
           <div className={'section-title'}>
-            <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+            <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
             <h2>Problem Statement</h2>
             </div>
             <p>Our target users are young adults who experience frustration with recalling and finding photos on their phone because it is disorganised. This leads to photos being forgotten, memories being missed and an accumulation of unused photos.</p>
@@ -37,7 +39,7 @@ function DriftAppDetails({project, onBack}) {
 
         <div className={'quadrant-card'}>
           <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
             <h2>Goal Statement</h2>
             </div>
             <p>Our Photo App will let users cluster and organise their photos in a meaningful way. This will affect how users connect and look back at their memories by making a more personalised and efficient photo gallery. We will measure the effectiveness of the app by testing how users feel when using the app, such as their frustrations, and how quickly they can find a photo.</p>
@@ -46,7 +48,7 @@ function DriftAppDetails({project, onBack}) {
       </div>
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Research: Initial User Flows</h2>
         </div>
         <p>Our initial user flows serve as the foundation for how we intend to create our key features and functionality in Drift, our photo clustering app. They also helped to build the flow between the main screens in our app (like home screen, cluster view, settings etc).</p>
@@ -89,7 +91,7 @@ function DriftAppDetails({project, onBack}) {
         
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Research: Information Architecture</h2>
         </div>
         <p>Our first information architecture was created by considering the user flows and the major features we wished to include in the app. It was our intention to make each of the top level categories (in green) an item on the navigation bar, however, we were not happy with there being six items, and thought we might moving settings under profile. Compared to the app later on, there was a greater focus on friends and AI automation rather than augmentation, where it would automatically pull photos from your phone and sort them. </p>
@@ -99,7 +101,7 @@ function DriftAppDetails({project, onBack}) {
         
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Low-Fidelity Wireframing</h2>
         </div>
         <p>These wireframes shows the screens you would see in the first user flow - Finding a photo using the Clusters screen. You can get to the Clusters Screen by tapping the cluster icon (4th icon in the bottom navigation bar).
@@ -116,7 +118,7 @@ function DriftAppDetails({project, onBack}) {
         </div>
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Expert Design Test</h2>
         </div>
         <p>The Expert Review yielded valuable feedback on design weaknesses, strengths, and potential improvements, which we reviewed and incorporated ahead of final usability testing. Some feedback flagged unimplemented Figma features, intentionally left out as outside our scope, but this highlighted a bias in how we defined task-completion actions. We addressed this by allowing for user errors in our usability testing.
@@ -129,7 +131,7 @@ function DriftAppDetails({project, onBack}) {
         </p>
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Usability Design Test</h2>
         </div>
         <p>We tested our high-fidelity prototype with four participants unaffiliated with the course, ensuring unbiased, first-impression reactions. As non-experts, their feedback tended to be straightforward, noting what felt intuitive or confusing, but remained valuable and informed several meaningful design changes.
@@ -140,7 +142,7 @@ function DriftAppDetails({project, onBack}) {
         </p>
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>High-Fidelity Wireframe</h2>
         </div>
         <p>The high-fidelity prototype covers all core features: search, uploading photos to multiple clusters with auto-sorting, viewing photos within clusters, and accessing recently added clusters. The changes shown were all driven by feedback from our testing process.

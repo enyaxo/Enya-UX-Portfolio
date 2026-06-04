@@ -1,6 +1,17 @@
 import TechnologiesPill from '../../TechnologiesPill';
 import './styles/UCGamesPage.css';
+
+// Image imports
 import HeroImage from '../../assets/project-assets/uc-games/hero_image.svg';
+import Sparkle from '../../assets/sparkle.svg';
+import UiResearch1 from '../../assets/project-assets/uc-games/ui_research_1.png'
+import UiResearch2 from '../../assets/project-assets/uc-games/ui_research_2.png'
+import LandingProtoPage from '../../assets/project-assets/uc-games/landing_proto_page.png'
+import GameProtoPage from '../../assets/project-assets/uc-games/game_proto_page.png'
+import WebsiteLayoutLogic from '../../assets/project-assets/uc-games/website_layout_logic.png'
+import TestingChanges1 from '../../assets/project-assets/uc-games/search_changes.png'
+import TestingChanges2 from '../../assets/project-assets/uc-games/search_results_changes.png'
+
 
 function UCGamesDetails({project, onBack}) {
     return (
@@ -26,7 +37,7 @@ function UCGamesDetails({project, onBack}) {
 
       {/* Unique description for this project */}
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Problem Overview</h2>
         </div>
         <p>
@@ -34,43 +45,43 @@ function UCGamesDetails({project, onBack}) {
         </p>
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Research</h2>
         </div>
         <div className='img-gallery'>
-          <img src='../src/assets/project-assets/uc-games/ui_research_1.png' alt="UI Research Image of Itch.io"></img>
-          <img src='../src/assets/project-assets/uc-games/ui_research_2.png' alt="UI Research Image of Steam"></img>
+          <img src={UiResearch1} alt="UI Research Image of Itch.io"></img>
+          <img src={UiResearch2} alt="UI Research Image of Steam"></img>
         </div>
         <p>To create a website tool with a familiar and relevant user interface, we moved towards researching various game catalog/storage to better our understanding of how our catalog may look in line with the theme of video games. We approached Steam, XBox, and itch.io's user interfaces, looking at their use of cards, overlays, search navigation, and their display of a game's individual page.</p>
         
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Prototyping & Wireframing</h2>
         </div>
         <div className='img-gallery'>
-          <img src='../src/assets/project-assets/uc-games/landing_proto_page.png' alt="Low-fidelity Prototype of the Landing Page"></img>
-          <img src='../src/assets/project-assets/uc-games/game_proto_page.png' alt="Low-fidelity Prototype of the Game Page"></img>
+          <img src={LandingProtoPage} alt="Low-fidelity Prototype of the Landing Page"></img>
+          <img src={GameProtoPage} alt="Low-fidelity Prototype of the Game Page"></img>
         </div>
         <p>In between our low fidelity wireframing and prototyping through Figma, we often meet with our stakeholders to receive a constant flow of feedback. This allowed us to continuouly refine our product until it was one that aligned with our stakeholder needs. We opted for paper/digital low-fidelity wireframing to "sus-out" the general skeleton and features, moving to Figma to refine this in a high-fidelity prototype.</p>
         <div style={{display: 'flex', flexDirection: 'row', marginBottom: '2em'}}>
-          <img src='../src/assets/project-assets/uc-games/website_layout_logic.png' style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt='Graphic of website complete layout as a flowchart prototype'></img>
+          <img src={WebsiteLayoutLogic} style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt='Graphic of website complete layout as a flowchart prototype'></img>
         </div>
         
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Development</h2>
         </div>
         <p>Our final prototype is build through React, with support in JavaScript's JSON format which we used to call and populate the cards and game pages showcased in the catalog. We divided the webpage into sections where each member of my group worked on a particular element of their choosing; I worked on and developed the GamePage and the routing between cards and it's respective page.</p>
 
         <div className={'section-title'}>
-        <img src='../src/assets/sparkle.svg' alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
         <h2>Testing & Changes</h2>
         </div>
         <p>Before finalising our developed prototype, we sought users to test our website to identify any features we neglected to implement and the usability/functionality of our website as a whole. We conducted an A/B testing flow to test two different means of filtering the search, the first test tested the search filter down to a specific game, the second broadening with the relevant tags (AND vs OR). Testing gave us insight into other features, such as the theme toggle and how it's presented, and the information displayed on the cards.</p>
         
         <div className='img-gallery'>
-          <img src='../src/assets/project-assets/uc-games/search_results_changes.png' alt="Changes made to the search results page"></img>
-          <img src='../src/assets/project-assets/uc-games/search_changes.png' alt="Search icon changes"></img>
+          <img src={TestingChanges1} alt="Changes made to the search results page"></img>
+          <img src={TestingChanges2} alt="Search icon changes"></img>
         </div>
         
         </div>
