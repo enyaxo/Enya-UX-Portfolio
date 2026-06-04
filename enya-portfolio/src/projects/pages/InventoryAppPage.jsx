@@ -1,7 +1,13 @@
 import TechnologiesPill from '../../TechnologiesPill';
 import './styles/UCGamesPage.css';
+
+// Images imports
 import HeroImage from '../../assets/project-assets/inventory-app/hero_image.svg';
 import Sparkle from '../../assets/sparkle.svg';
+import UiResearch1 from '../../assets/project-assets/inventory-app/ui_research_1.png'
+import UiResearch2 from '../../assets/project-assets/inventory-app/ui_research_2.png'
+import StickyNoteProto from '../../assets/project-assets/inventory-app/sticky_note_prototyping.png'
+
 
 
 function InventoryAppDetails({project, onBack}) {
@@ -59,8 +65,8 @@ function InventoryAppDetails({project, onBack}) {
         <h2>Research</h2>
         </div>
         <div className='img-gallery'>
-          <img src='../src/assets/project-assets/inventory-app/ui_research_1.png' alt="AnyList product inventory structure analysis"></img>
-          <img src='../src/assets/project-assets/inventory-app/ui_research_2.png' alt="UI Research Image of Steam"></img>
+          <img src={UiResearch1} alt="AnyList product inventory structure analysis"></img>
+          <img src={UiResearch2} alt="UI Research Image of Steam"></img>
         </div>
         <p>A re-occurring feature across inventory management apps is a page for analytics and statistics to be used for inventory managers or administrators. These provide insights such as popular items and low stock items. These page could be used to alert staff to actions that may need to be taken.
           Another key feature of inventory management systems and a need from our stakeholders is the ability to house different types of items, and store information about them, which differs item by item. We would need to consider how to store the varying information in the data source and how to display/interact with it in the front-end.</p>
@@ -71,7 +77,7 @@ function InventoryAppDetails({project, onBack}) {
         </div>
         <p>As our project progressed through research, meetings with stakeholders, and decisions beginning to be made, we decided the best approach was to review where we are with the project and where we were heading. To do this we wrote every feature we may add to the web app – in or out of scope/ time constraints – onto sticky notes. Using this information, we gathered and categorised each feature to be scoped in a graph ranking importance from most important to least. Including features which may seem “out of scope” allowed us to judge whether they were or were not out of our capabilities. This activity allowed us to visualise this project rather than approach it with our own cognitive perspective, relative to each person and their capabilities/ strengths and web development history.</p>
         <div style={{display: 'flex', flexDirection: 'row', marginBottom: '2em'}}>
-          <img src='../src/assets/project-assets/inventory-app/sticky_note_prototyping.png' style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt=''></img>
+          <img src={StickyNoteProto} style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt=''></img>
         </div>
 
         <div className={'section-title'}>
