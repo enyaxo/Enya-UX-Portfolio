@@ -95,6 +95,10 @@
     background-color: rgba(155, 127, 255, 60%);
 }
 
+.nav-button.active {
+    background-color: rgba(155, 127, 255, 40%);
+}
+
 .page-title h1 span {
     color: #7770D9;
     cursor: default;

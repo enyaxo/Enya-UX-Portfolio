@@ -38,9 +38,9 @@ function MainContainer() {
                     </div>
                     <div className={"divider"}>
                         <ul>
-                            <li onClick={() => setActivePage('about')} className={'nav-button'}>About</li>
-                            <li onClick={() => setActivePage('works')} className={'nav-button'}>Works</li>
-                            <li onClick={() => setActivePage('contact')} className={'nav-button'}>Contact</li>
+                            <li onClick={() => setActivePage('about')} className={`nav-button ${activePage === 'about' ? 'active' : ''}`}>About</li>
+                            <li onClick={() => setActivePage('works')} className={`nav-button ${activePage === 'works' ? 'active' : ''}`}>Works</li>
+                            <li onClick={() => setActivePage('contact')} className={`nav-button ${activePage === 'contact' ? 'active' : ''}`}>Contact</li>
                         </ul>
                     </div>
                     <div className={'page-content'}>
