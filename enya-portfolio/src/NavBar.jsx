@@ -4,15 +4,21 @@ function NavBar() {
     return (
         <div className={"browser-header"}>
             <div className={'window-dots'}>
-                <svg className={'dot-exit'} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href='https://enyascorner.com/'>
+                    <svg className={'dot-exit'} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="white"/>
+                    </svg>
+                </a>
+                <a href='https://enyascorner.com/'>
+                    <svg className={'dot-min'} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="10" fill="white"/>
                 </svg>
-                <svg className={'dot-min'} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </a>
+                <a href='https://enyascorner.com/'>
+                    <svg className={'dot-full'} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="10" fill="white"/>
-                </svg>
-                <svg className={'dot-full'} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="10" fill="white"/>
-                </svg>
+                    </svg>
+                </a>
             </div>
             <div className={"search-bar"}>
                 <svg className={'icon'} width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
