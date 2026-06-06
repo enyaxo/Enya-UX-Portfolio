@@ -1,3 +1,8 @@
+.image-wipe-container {
+    position: relative;
+    display: inline-block;
+}
+
 .hero-image {
     width: 12em;
     height: auto;
@@ -5,13 +10,32 @@
     border-style: solid;
     border-width: 4px;
     border-color: white;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.1s ease-out;
+    transition: opacity 0.6s ease-in;
+
 }
 
-.hero-image:hover {
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 70%);
-    transform: scale(1.03);
-    transition: all 0.3s ease-in-out;
+.hero-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12em;
+    height: auto;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 0.6s ease-in-out, transform 0.6s ease-in-out, filter 0.6s ease-in-out;
+}
+
+.image-wipe-container:hover .hero-image-overlay {
+    clip-path: inset(0 0% 0 0);
+    filter: drop-shadow(0 4px 5px rgba(255, 255, 255, 70%));
+}
+
+.image-wipe-container:hover .hero-image {
+    opacity: 0;
 }
 
 .about-container {

@@ -1,16 +1,15 @@
 import './About.css'
 import Sparkle from '../assets/sparkle.svg';
 import PhotoOfMe from '../assets/photo_of_me.jpg';
-
+import DrawingOfMe from '../assets/drawing_of_me2.png';
 
 function About() {
-    console.log(PhotoOfMe);
-
     return (
         <div className={"about-container"}>
             <div className={"about-content"}>
-                <div>
+                <div className={"image-wipe-container"}>
                     <img src={PhotoOfMe} alt="Photo of me" className='hero-image'></img>
+                    <img src={DrawingOfMe} alt="Photo of me" className='hero-image-overlay'></img>
                 </div>
                 <div>
                     <h1>About Me !</h1>
