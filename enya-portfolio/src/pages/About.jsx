@@ -4,6 +4,9 @@ import PhotoOfMe from '../assets/photo_of_me.jpg';
 import DrawingOfMe from '../assets/drawing_of_me2.png';
 
 function About() {
+
+    const bubblePath = "M1395.2 0C1508.42 0 1600.2 91.7816 1600.2 205C1600.2 318.218 1508.42 410 1395.2 410H403.204C347.798 410 297.529 388.017 260.635 352.301C254.425 353.416 248.031 354 241.5 354C182.129 354 134 305.871 134 246.5C134 199.102 164.676 158.869 207.257 144.569C233.047 60.847 311.02 7.35583e-05 403.204 0H1395.2ZM114.5 74C143.495 74 167 97.5051 167 126.5C167 155.495 143.495 179 114.5 179C85.5051 179 62 155.495 62 126.5C62 97.5051 85.5051 74 114.5 74ZM26.3789 126C39.0815 126 49.3789 136.297 49.3789 149C49.3789 161.703 39.0815 172 26.3789 172C13.6765 172 3.37891 161.702 3.37891 149C3.37891 136.298 13.6765 126 26.3789 126Z";
+
     return (
         <div className={"about-container"}>
             <div className={"about-content"}>
@@ -13,23 +16,36 @@ function About() {
                 </div>
                 <div>
                     <h1>About Me !</h1>
-                    <div className="speech-bubble" style={{position: "relative", display: "inline-block", }}>
-                        <svg width="100%" height="auto" viewBox="0 0 995 489" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M863.5 44C929.498 44 983 97.502 983 163.5C983 229.498 929.498 283 863.5 283H306.5C296.997 283 287.754 281.888 278.892 279.792C266.197 288.742 250.713 294 234 294H228C184.922 294 150 259.078 150 216C150 187.602 165.176 162.75 187.859 149.108C194.967 89.8964 245.373 44 306.5 44H863.5ZM101.5 150C124.42 150 143 168.58 143 191.5V192.5C143 215.42 124.42 234 101.5 234C78.5802 234 60 215.42 60 192.5V191.5C60 168.58 78.5802 150 101.5 150ZM19.5 169C30.2696 169 39 177.73 39 188.5C39 199.27 30.2696 208 19.5 208C8.73045 208 0 199.27 0 188.5C0 177.73 8.73045 169 19.5 169Z" fill="#F2F1FF"/>            
+                    <div className="speech-bubble">
+                        <svg width="100%" viewBox="0 0 1600 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="paint0_linear_17_2" x1="841" y1="0" x2="841" y2="410" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="white"/>
+                                    <stop offset="1" stopColor="#f0efff"/>
+                                </linearGradient>
+                            </defs>
+                            <path d={bubblePath} fill="white"/>
+                            <path d={bubblePath} fill="url(#paint0_linear_17_2)" fillOpacity="1"/>
+                            <foreignObject x="280" y="50" width="1280" height="310">
+                                <div
+                                    xmlns="http://www.w3.org/1999/xhtml"
+                                    style={{
+                                        fontSize: "4.4em",
+                                        fontStyle: "Italic",
+                                        color: "#333",
+                                        lineHeight: 1.4,
+                                        height: "100%",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        padding: "0 40px",
+                                        boxSizing: "border-box",
+                                        pointerEvents: "none",
+                                    }}
+                                >
+                                    "The only way to expand your world is to come in contact with things you aren't familiar with" - Blue Period
+                                </div>
+                            </foreignObject>
                         </svg>
-                        <div style={{
-                                position: "absolute",
-                                top: "30%",
-                                left: "58%",
-                                transform: "translate(-50%, -50%)",
-                                textAlign: "center",
-                                fontSize: "1em",
-                                fontFamily: "sans-serif",
-                                color: "#333",
-                                pointerEvents: "none",
-                            }}>
-                            Hello World
-                        </div>
                     </div>
                 </div>
                 

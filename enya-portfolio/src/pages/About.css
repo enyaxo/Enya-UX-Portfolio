@@ -74,3 +74,10 @@
     align-items: center;
     gap: 0.5em; 
 }
+
+.speech-bubble {
+    padding-top: 1em;
+    border-width: 4em;
+    filter: drop-shadow(3px 0 5px rgba(255, 255, 255, 50%));
+
+}
