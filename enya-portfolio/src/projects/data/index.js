@@ -8,7 +8,6 @@ const projects = [
     ucGames,
     driftApp,
     inventoryApp,
-    javaGame
 ]
 
 export default projects
