@@ -8,3 +8,16 @@
 .section-contact a {
     cursor: pointer;
 }
+
+.contact-icon {
+    width: 2em;
+    height: auto;
+
+    filter: invert(100%);
+}
+
+@media (prefers-color-scheme: light) {
+  .contact-icon {
+    filter: invert(23%) sepia(14%) saturate(781%) hue-rotate(223deg) brightness(92%) contrast(93%);
+  }
+}
