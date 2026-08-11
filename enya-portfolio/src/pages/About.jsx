@@ -15,7 +15,7 @@ function About() {
                     <img src={DrawingOfMe} alt="Photo of me" className='hero-image-overlay'></img>
                 </div>
                 <div>
-                    <h1>About Me !</h1>
+                    <h1>About me...</h1>
                     <div className="speech-bubble">
                         <svg width="100%" viewBox="0 0 1600 410" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
@@ -53,7 +53,7 @@ function About() {
             <div className='about-details'>
                 <div>
                     <div className='section-title'>
-                        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+                        <img src={Sparkle} alt="Sparkle decoration" class={'icon'} style={{width: '2em', height: 'auto'}}></img>
                         <h2>Skills</h2>
                     </div>
                     <ul>

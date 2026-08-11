@@ -32,14 +32,12 @@
 
 .card-folder h5 {
   margin: 0;
-  color: var(--secondary-text);
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .card-folder p {
   margin: 0;
-  color: var(--secondary-text);
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 10px;

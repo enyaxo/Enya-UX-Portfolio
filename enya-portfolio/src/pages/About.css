@@ -55,9 +55,9 @@
 .about-content h1 {
     font-size: 4em;
     margin: 0;
+    padding-bottom: 10px;
     font-family: var(--display-font);
     font-style: italic;
-    color: rgb(86, 75, 113);
 }
 
 .about-details {
