@@ -1,5 +1,6 @@
 import TechnologiesPill from '../../TechnologiesPill';
-import './styles/UCGamesPage.css';
+import './styles/InventoryAppPage.css';
+import { useState } from 'react';
 
 // Images imports
 import HeroImage from '../../assets/project-assets/inventory-app/hero_image.svg';
@@ -11,6 +12,17 @@ import StickyNoteProto from '../../assets/project-assets/inventory-app/sticky_no
 
 
 function InventoryAppDetails({project, onBack}) {
+
+    const [activeImage, setActiveImage] = useState(null);
+ 
+    function openModal(src, alt) {
+      setActiveImage({ src, alt});
+    }
+  
+    function closeModal() {
+      setActiveImage(null);
+    }
+
     return (
     <div className={'project-details-container'}>
       <button className={'back-button'} onClick={onBack}>
@@ -76,8 +88,14 @@ function InventoryAppDetails({project, onBack}) {
         <h2>Reviewing the Scope</h2>
         </div>
         <p>As our project progressed through research, meetings with stakeholders, and decisions beginning to be made, we decided the best approach was to review where we are with the project and where we were heading. To do this we wrote every feature we may add to the web app – in or out of scope/ time constraints – onto sticky notes. Using this information, we gathered and categorised each feature to be scoped in a graph ranking importance from most important to least. Including features which may seem “out of scope” allowed us to judge whether they were or were not out of our capabilities. This activity allowed us to visualise this project rather than approach it with our own cognitive perspective, relative to each person and their capabilities/ strengths and web development history.</p>
+        
         <div style={{display: 'flex', flexDirection: 'row', marginBottom: '2em'}}>
-          <img src={StickyNoteProto} style={{width: '100%', height: 'auto', borderRadius: "1em"}} alt=''></img>
+          <img
+            src={StickyNoteProto}
+            style={{width: '100%', height: 'auto', borderRadius: "1em", cursor: 'pointer'}}
+            alt="Sticky Note Scoping"
+            onClick={() => openModal(StickyNoteProto, "Sticky Note Scoping")}
+          />
         </div>
 
         <div className={'section-title'}>
@@ -85,7 +103,25 @@ function InventoryAppDetails({project, onBack}) {
         <h2>Low-fidelity Prototyping</h2>
         </div>
 
+        
+
         </div>
+
+        {/* Reusable active image lightbox model */}
+
+        {activeImage && (
+        <div className={'modal show'} onClick={closeModal}>
+          <span className={'close'} onClick={closeModal}>&times;</span>
+          <img
+            src={activeImage.src}
+            alt={activeImage.alt}
+            className={'modal-content'}
+            style={{width: '100%', height: 'auto', borderRadius: "1em"}}
+            onClick={(e) => e.stopPropagation()}
+          />
+          {activeImage.caption}
+        </div>
+      )}
     </div>
   );
 }
