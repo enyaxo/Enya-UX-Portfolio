@@ -13,8 +13,7 @@
 }
 
 .modal-content {
-  max-width: 90vw;
-  max-height: 85vh;
+  max-width: 70vw;
   width: auto;
   height: auto;
   cursor: default;
