@@ -45,6 +45,11 @@
     margin: 0;
     font-family: var(--display-font);
     font-style: italic;
+    text-align: center;
+}
+
+.project-heading h3 {
+  text-align: center;
 }
 
 .heading-strip {
