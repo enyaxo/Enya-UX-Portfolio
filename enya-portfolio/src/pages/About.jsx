@@ -1,7 +1,14 @@
 import './About.css'
 import Sparkle from '../assets/sparkle.svg';
+/* Image imports*/
 import PhotoOfMe from '../assets/photo_of_me.jpg';
 import DrawingOfMe from '../assets/drawing_of_me2.png';
+import MadokaKaname from '../assets/illustrations/Madoka_Jellyfish.jpg'
+import Columbina from '../assets/illustrations/Columbina.png'
+import MarinKitagawa from '../assets/illustrations/Marin.png'
+import Bocchi from '../assets/illustrations/Bocchi_S13.png'
+
+
 
 function About() {
 
@@ -76,9 +83,27 @@ function About() {
                         <li>Crocheting, reading, baking...</li>
                     </ul>
                 </div>
-
             </div>
-            
+            <div className='my-illustrations'>
+                <div className='section-title'>
+                        <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto'}}></img>
+                        <h2>A few of my illustrations!</h2>
+                </div>
+                <div className='illustration-gallery'>
+                    <div class="gallery-item">
+                        <img src={MadokaKaname} alt="Madoka Kaname drawing"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={Columbina} alt="Item History"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={MarinKitagawa} alt="Item History"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={Bocchi} alt="Item History"></img>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
