@@ -6,7 +6,16 @@
 
 body {
   background:
-          linear-gradient(217deg, #874dff, transparent 70.71%),
-          linear-gradient(127deg, #ffb260, transparent 70.71%),
-          linear-gradient(336deg, #b382ff, transparent 70.71%);
+          linear-gradient(217deg, #5522bb, transparent 100%),
+          linear-gradient(127deg, #dc8c37, transparent 100%),
+          linear-gradient(336deg, #6f3fb6, transparent 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background:
+            linear-gradient(217deg, #874dff, transparent 100%),
+            linear-gradient(127deg, #ffb260, transparent 100%),
+            linear-gradient(336deg, #b382ff, transparent 100%);
+  }
 }
