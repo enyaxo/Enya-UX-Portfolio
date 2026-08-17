@@ -7,6 +7,15 @@ import MadokaKaname from '../assets/illustrations/Madoka_Jellyfish.jpg'
 import Columbina from '../assets/illustrations/Columbina.png'
 import MarinKitagawa from '../assets/illustrations/Marin.png'
 import Bocchi from '../assets/illustrations/Bocchi_S13.png'
+/*Graphic design img imports */
+import DanDaDanRemake from '../assets/graphic-design/dan_da_dan remake.png'
+import Edgerunners from '../assets/graphic-design/edgerunners.png'
+import Espeon from '../assets/graphic-design/espeon.png'
+import Luther from '../assets/graphic-design/luther.png'
+import LandingWebpage from '../assets/graphic-design/Landing webpage specimen.png'
+import Mizuki from '../assets/graphic-design/mizuki2.png'
+import DanDaDan from '../assets/graphic-design/dandadan.png'
+
 
 
 
@@ -88,7 +97,7 @@ function About() {
             <div className='hobbies'>
                 <div className='section-title'>
                         <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto'}}></img>
-                        <h2>A few of my illustrations</h2>
+                        <h2>A few of my illustrations!</h2>
                 </div>
                 <div className='illustration-gallery'>
                     <div class="gallery-item">
@@ -109,9 +118,30 @@ function About() {
             <div className='hobbies'>
                 <div className='section-title'>
                         <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto'}}></img>
-                        <h2>My Graphic Design Work</h2>
+                        <h2>My graphic design work:</h2>
                 </div>
                 <div className='illustration-gallery'>
+                    <div class="gallery-item">
+                        <img src={DanDaDanRemake} alt="Madoka Kaname drawing"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={Edgerunners} alt="Item History"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={Espeon} alt="Item History"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={Luther} alt="Item History"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={DanDaDan} alt="Item History"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={LandingWebpage} alt="Item History"></img>
+                    </div>
+                    <div class="gallery-item">
+                        <img src={Mizuki} alt="Item History"></img>
+                    </div>
                 </div>
             </div>
         </div>
