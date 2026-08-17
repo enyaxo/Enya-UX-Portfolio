@@ -5,8 +5,10 @@ import './styles/ConsoleInventory.css';
 import HeroImage from '../../assets/project-assets/console-inventory/hero-image.svg';
 import Sparkle from '../../assets/sparkle.svg';
 import FocusUserFlow from '../../assets/project-assets/console-inventory/user_flow.png';
-
-
+import LowFiScreens from '../../assets/project-assets/console-inventory/low_fi_screens.png';
+import HighFiScreens from '../../assets/project-assets/console-inventory/high_fi_screens.png';
+import ButtonAssets from '../../assets/project-assets/console-inventory/button_assets.png';
+import ConsoleAssets from '../../assets/project-assets/console-inventory/console_assets.png';
 
 
 function ConsoleInventoryDetails({project, onBack}) {
@@ -57,7 +59,28 @@ function ConsoleInventoryDetails({project, onBack}) {
       <p>Low-fidelity prototypes were created to explore the user flow of accessing a game in your personal collection. This was done to iterate on the design quickly and gather feedback before investing in high-fidelity designs. The feedback I gathered focused mainly on the smaller details, adding carousel functionality and position indicators.</p>
 
       <p>My low-fidelity prototypes began on paper, and moved to Figma to create more polished versions and explore interactivity with the keyboard, touch, and gamepad. This allowed me to clearly visualise how games stacked on top of each other will be displayed and accessed in relation to one another. </p>
+      <div className={'centered-image-container'}>
+        <img src={LowFiScreens} alt='Low Fidelity Screens'></img>
+      </div>
 
+      <div className={'section-title'}>
+          <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto', color: 'rgb(86, 75, 113)'}}></img>
+          <h2>High-Fidelity Prototypes</h2>
+      </div>
+      <p>High-fidelity prototypes were created once satisfied with the structure and functionality of the low-fidelity versions. The theme that the high-fidelity prototypes followed was a modern spin on Skeomorphic designs, utilising the centre-piece of the design, the ability to shelf games (literally).</p>
+
+      <p>Below are some of the main assets used, shown with all interactive states:</p>
+      <div className={'centered-image-container'}>
+        <img src={ButtonAssets} alt='Button Assets'></img>
+      </div>
+      <p>Below are the assets used for the console displays:</p>
+      <div className={'centered-image-container'}>
+        <img src={ConsoleAssets} alt='Console Assets'></img>
+      </div>
+      <p>Finally, the following is a demonstration of the completed interface:</p>
+      <div className={'centered-image-container'}>
+        <img src={HighFiScreens} alt='High Fidelity Screens'></img>
+      </div>
     </div>
   );
 }
