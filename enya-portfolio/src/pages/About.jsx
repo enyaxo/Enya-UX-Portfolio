@@ -94,7 +94,7 @@ function About() {
                 </div>
             </div>
 
-            <div className='hobbies'>
+            {/*<div className='hobbies'> 
                 <div className='section-title'>
                         <img src={Sparkle} alt="Sparkle decoration" style={{width: '2em', height: 'auto'}}></img>
                         <h2>A few of my illustrations!</h2>
@@ -113,7 +113,7 @@ function About() {
                         <img src={Bocchi} alt="Item History"></img>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className='hobbies'>
                 <div className='section-title'>

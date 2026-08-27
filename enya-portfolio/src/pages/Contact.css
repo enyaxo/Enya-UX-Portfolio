@@ -21,3 +21,18 @@
     filter: invert(23%) sepia(14%) saturate(781%) hue-rotate(223deg) brightness(92%) contrast(93%);
   }
 }
+
+/* Mobile responsiveness */
+
+
+@media (max-width: 600px) {
+    .section-contact {
+        gap: 0.6em;
+        font-size: 0.85em;
+    }
+
+    .contact-icon {
+        width: 1.6em;
+        flex-shrink: 0;
+    }
+}
