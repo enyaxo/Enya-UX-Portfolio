@@ -4,8 +4,10 @@ import driftApp from './drift-app.js';
 import inventoryApp from './inventory-app.js';
 import javaGame from './java-game.js'
 import consoleInventory from './console-inventory.js'
+import polias from './polias.js'
 
 const projects = [
+    polias,
     consoleInventory,
     ucGames,
     driftApp,
